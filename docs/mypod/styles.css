@@ -1,0 +1,60 @@
+*{
+padding: 0;
+margin: 0;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+body{
+    background-color: rgb(39, 39, 39);
+    color: aliceblue;
+}
+
+header{
+    background-color: rgb(211, 211, 211);
+    padding-left: 5%;
+}
+.main-container{
+    width: calc(90% - 30px);
+    background-color: rgba(146, 146, 146, 0.178);
+    margin-left: 5%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 10px 30px rgba(12, 0, 0, 0.767);
+}
+
+h1{
+    font-size: clamp(1.7rem, 3vw, 2.7rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+p{
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+.city-name{
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navegation{
+    align-content: center;
+}
+.img-min{
+    width: 50%;
+    min-width: 294px;
+    max-width:390px ;
+}
+
+footer{
+    background-color: rgb(211, 211, 211);
+    color: black;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color:rgb(51, 51, 51);
+}
