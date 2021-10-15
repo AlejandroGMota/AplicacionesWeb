@@ -1,13 +1,9 @@
-const btnFullImg = document.getElementById('min-image'),
-    modalC = document.getElementById('nuestras-bebidas'),
+const btnDirection = document.getElementById('full-direction'),
+    modalC = document.getElementById('direction-container'),
     modal = document.getElementById('modal'),
     cerrar = document.getElementById('close');
 
-    
-btnFullImg.addEventListener('click', () => {
-    console.log('botn funcionando');
-});
-btnFullImg.addEventListener('click', () => {
+    btnDirection.addEventListener('click', () => {
     modalC.style.visibility = "visible";
     modal.style.transform = "translateY(0%)";
 });
@@ -17,4 +13,13 @@ cerrar.addEventListener('click', () => {
     setTimeout(() => {
         modalC.style.visibility = 'hidden';
     }, 500)
+});
+window.addEventListener('click', function (e) {
+    if (e.target == modalC) {
+        modal.style.transform = "translateY(-150%)";
+        setTimeout(() => {
+            modalC.style.visibility = 'hidden';
+        }, 500)
+
+    }
 });
