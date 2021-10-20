@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+}
+body{
+    background-color: #F5DE9D;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header{
+    height: 110px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 360px;
+    margin-bottom: 100px;
+    width: 100%;
+    font-size:clamp(1rem, 2.5vw, 3rem);
+}
+div{
+    display: flex;
+    background-color: #DE8B83;
+    border-radius: 8px;
+    width: 80%;
+    justify-content: center;
+    min-width: 330px;
+    max-width: 800px;
+} 
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+.otherpages{
+    text-align: center;
+    list-style-type: none;
+    background-color:#96EAFF;
+    border:  1px solid #0b070e;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 50px;
+    border-radius: 5px;
+}
+.otherpages a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    text-shadow: #0b070e 0 0 8px ;
+    width: 70%;
+    font-size:clamp(1.7rem, 4vw, 3rem);
+    line-height: 4rem;    
+}
+footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;    
+    color: white;
+    text-align: center;
+    font-size:clamp(1rem, 1.5vw, 4rem);
+
+}
+footer a {
+    text-decoration: none;
+    color: wheat;
+}
