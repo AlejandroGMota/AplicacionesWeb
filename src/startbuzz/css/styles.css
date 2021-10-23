@@ -1,82 +1,182 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(216, 182, 140);
+
+:root {
+    --main-color: rgb(154, 106, 77);
+    --second-color: rgb(245, 234, 222);
+}
+
+body {
+    background-color: var(--second-color);
     text-align: center;
 }
-header{
-    background-color: rgb(204, 172, 133);
+
+header {
+
+    background-color: var(--main-color);
     display: block;
-}
-.header1{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+
+
+    background: linear-gradient(180deg, rgb(60 34 2) 0%, rgba(120, 64, 17, 1) 30%, rgb(154 106 77) 80%, rgb(154 106 77) 100%);
+    color: var(--second-color);
 }
-.navbar{
-    background-color: beige;
+
+header h1 {
+    font-size: clamp(2.5rem, 10vw, 10rem);
+    text-align: left;
+    padding: 12vh 45vw 0 0;
+}
+
+header button {
+    width: 120px;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 12px;
+    border: 0px;
+    color: azure;
+    font-size: clamp(1.5rem, 3vh, 2rem);
+    cursor: pointer;
+    position: absolute;
+    bottom: 20vh;
+    align-items: center;
+}
+
+header button img:hover {
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 15px;
+}
+
+nav {
+    background-color: rgb(242 207 167);
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.navbar-item{
-    text-decoration: none;
-    background-color:rgb(114, 88, 77);
-    color: rgb(236, 233, 227);
-    font-size: 20px;
-    float: left;
-    width: 46% ;
-    border-radius: 15px;
-    margin: 2%;
-}
-footer{
-    background-color: rgb(204, 172, 133);
+    align-items: center;
+    border-radius: 0 0 15px 15px;
 }
 
-.logo-main{
-    margin-left: 5%;
-    width: 120px;
-    height: 7%;
+.navbar {
+    width: 80%;
     display: flex;
+    justify-content: space-around;
 }
-h1{
-    display: flex;
-    align-items: center;
-    margin-left: -7%;
-    width: 83%;
-    justify-content: center;
-    font-size:250%;
-}
-.main-container{
-    margin-left: 10%;
-    margin-right: 10%;
-    border: medium double #369; 
-}
-.container{
-    margin-left: 10%;
-    margin-right: 10%;
-    border: groove 10px rgba(235, 202, 166, 0.705);
-}
-.product-name{
-    margin-top: 15px;
-}
-.title{
-    font-size: 27px;
-    margin-bottom: 15px;
-}
-.mission-container{
-    margin-left: 10%;
-    margin-right: 10%;
-    border: groove 10px rgba(235, 202, 166, 0.705);
-}
-.navbar li{
+
+.navbar li {
     list-style-type: none;
 }
-ol{
-    width: 80%;
+
+.navbar-item {
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 2%;
+    width: 120%;
+    max-width: 150px;
+    padding: 0 25px;
 }
-.example-image{
-width: 80%;
+
+.logo-main {
+    width: 80px;
+}
+
+
+.main-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 10px 0;
+    border: solid 2px var(--main-color);
+    width: 65%;
+    border-radius: 15px;
+    min-width: 320px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+h2 {
+    width: 100%;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin: 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 {
+    width: 100%;
+    font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+    margin: 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    width: 65%;
+    margin-bottom: 15px;
+}
+
+.content a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: black;
+    text-shadow: 0 0 0.3px #000;
+}
+.content .product-name{
+width: 100%;
+}
+
+.content img {
+    width: 20%;
+    border-radius: 5px;
+    min-width: 240px;
+}
+
+.sidebar {
+    margin: 10px 0;
+    border: solid 2px var(--main-color);
+    border-radius: 15px;
+    width: 20%;
+    min-width: 320px;
+    padding: 15px;
+    max-height: 620px;
+}
+
+.sidebar p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--main-color);
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 89px;
+    line-height: 89px;
 }
