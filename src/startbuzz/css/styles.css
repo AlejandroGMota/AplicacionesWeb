@@ -180,3 +180,13 @@ footer {
     height: 89px;
     line-height: 89px;
 }
+footer a{
+    color:var(--second-color);
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer a:hover {
+    color:rgb(216, 216, 215);
+    text-shadow: 0 0 0.4px #000;
+}
