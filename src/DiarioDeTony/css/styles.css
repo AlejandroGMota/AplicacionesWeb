@@ -67,21 +67,18 @@ h2 {
 }
 
 .blog-text {
-    padding-left: 25px;
+    padding:5px 25px;
     text-align: justify;
-    padding-right: 12px;
-    padding-bottom: 5px;
     font-size: clamp(1.2rem, 3vw, 1.7rem);
 
 }
 .blog-text table{
     margin: 15px 0 ;
     width: 95%;
-    min-width: 300px;
     text-align: center;
     border-collapse: collapse;
     border-radius: 5px;
-    font-size: clamp(1rem,2vw,1.8rem);
+    font-size: clamp(0.9rem,2vw,1.8rem);
 }
 .blog-text table td,th{
     border: 1px solid rgb(0, 0, 0);
@@ -96,13 +93,30 @@ h2 {
     background-color: bisque;
 }
 .blog-text table th {
-    background-color: blueviolet;
+    background-color: rgb(223, 212, 118);
 }
 .blog-text table td:nth-child(1) {
     text-align: justify;
 }
 .blog-text table td:nth-child(4),td:nth-child(5) {
     text-align:right;
+}
+@media (max-width: 649px) {
+    .blog-text table caption{
+        font-size: clamp(1rem, 1vw, 1.7rem);
+        padding: 0 5px;
+    }
+    .blog-text table{
+        margin:0;
+        padding: 0;
+        font-size: clamp(0.6rem,1vw,1.8rem);
+    }
+    .blog-text table td,th{
+        padding:4px 2px;
+    }
+    .blog-text {
+        padding:5px 1.5px;
+    }
 }
 footer {
     background-color: black;
