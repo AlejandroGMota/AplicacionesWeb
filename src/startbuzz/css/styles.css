@@ -13,10 +13,9 @@ body {
     text-align: center;
 }
 
-header {
+header.main {
 
     background-color: var(--main-color);
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,13 +26,13 @@ header {
     color: var(--second-color);
 }
 
-header h1 {
+header.main h1 {
     font-size: clamp(2.5rem, 10vw, 10rem);
     text-align: left;
     padding: 12vh 45vw 0 0;
 }
 
-header button {
+header.main button {
     width: 120px;
     height: 50px;
     background-color: var(--main-color);
@@ -51,6 +50,7 @@ header button img:hover {
     background-color: rgba(0, 0, 0, 0.062);
     border-radius: 15px;
 }
+
 
 nav {
     background-color: rgb(242 207 167);
@@ -81,6 +81,9 @@ nav {
     width: 120%;
     max-width: 150px;
     padding: 0 25px;
+}
+.selected{
+    background-color: rgb(80, 45, 0);
 }
 
 .logo-main {
